@@ -1,10 +1,10 @@
-# xts-marketdata-nodeJS-api-client-V2
+# xts-binary-marketdata-api
 
 Welcome to the XTS-MarketData-API SDK, This repository is Official Node.js library for Symphony XTS-MarketData-API.
 
 API Documentation for XTS-MarketData API can be found in the below link.
 
-https://symphonyfintech.com/xts-market-data-front-end-api/
+https://developers.symphonyfintech.in/doc/apimarketdata
 
 The XTS market data API provides developer, data-scientist, financial analyst and investor the market data with very low latency.
 It provides market data from various Indian electronic exchanges.
