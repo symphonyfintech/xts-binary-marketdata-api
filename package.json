@@ -27,7 +27,7 @@
     "name": "Symphony Fintech Solutions Pvt. Ltd."
   },
   "bugs": {
-    "url": "https://github.com/symphonyfintech/xts-marketdata-nodeJS-api-client-V2/issues"
+    "url": "https://github.com/symphonyfintech/xts-binary-marketdata-api/issues"
   },
   "bundleDependencies": false,
   "dependencies": {
@@ -43,7 +43,7 @@
   "directories": {
     "lib": "lib"
   },
-  "homepage": "https://github.com/symphonyfintech/xts-marketdata-nodeJS-api-client-V2#readme",
+  "homepage": "https://github.com/symphonyfintech/xts-binary-marketdata-api#readme",
   "keywords": [
     "SymphonyFintech",
     "Symphony",
@@ -58,7 +58,7 @@
   "name": "xts-marketdata-api",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/symphonyfintech/xts-marketdata-nodeJS-api-client-V2.git"
+    "url": "git+https://github.com/symphonyfintech/xts-binary-marketdata-api.git"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
