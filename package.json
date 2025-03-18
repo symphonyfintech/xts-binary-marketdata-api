@@ -1,0 +1,67 @@
+{
+  "_from": "xts-marketdata-api",
+  "_id": "xts-marketdata-api@3.0.11",
+  "_inBundle": false,
+  "_integrity": "sha512-Nw9jy1LL0knnjKiV1FzTelSNTf8VUzZMUMFtiNSY86uuaw3etiYE3dEgMafp8ovCOUg87yRzJAUZaYnLUKRMKA==",
+  "_location": "/xts-marketdata-api",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "tag",
+    "registry": true,
+    "raw": "xts-marketdata-api",
+    "name": "xts-marketdata-api",
+    "escapedName": "xts-marketdata-api",
+    "rawSpec": "",
+    "saveSpec": null,
+    "fetchSpec": "latest"
+  },
+  "_requiredBy": [
+    "#USER",
+    "/"
+  ],
+  "_resolved": "https://registry.npmjs.org/xts-marketdata-api/-/xts-marketdata-api-3.0.10.tgz",
+  "_shasum": "ebb9c0e0fda3a9f10fe747afaaa7390f8ee087ce",
+  "_spec": "xts-marketdata-api",
+  "_where": "D:\\rabbitmqnodeservices\\mkt_rabbit",
+  "author": {
+    "name": "Symphony Fintech Solutions Pvt. Ltd."
+  },
+  "bugs": {
+    "url": "https://github.com/symphonyfintech/xts-marketdata-nodeJS-api-client-V2/issues"
+  },
+  "bundleDependencies": false,
+  "dependencies": {
+    "deepmerge": "^3.2.0",
+    "linq": "^3.2.0",
+    "pako": "^2.1.0",
+    "request": "^2.88.0",
+    "request-promise": "^4.2.4",
+    "socket.io-client": "~2.2.0"
+  },
+  "deprecated": false,
+  "description": "The official JS client library for the Symphony Fintech MarketData API's",
+  "directories": {
+    "lib": "lib"
+  },
+  "homepage": "https://github.com/symphonyfintech/xts-marketdata-nodeJS-api-client-V2#readme",
+  "keywords": [
+    "SymphonyFintech",
+    "Symphony",
+    "Fintech",
+    "trading",
+    "stockmarket",
+    "stock",
+    "Interactive",
+    "ClientApp"
+  ],
+  "main": "./lib/",
+  "name": "xts-marketdata-api",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/symphonyfintech/xts-marketdata-nodeJS-api-client-V2.git"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "version": "3.0.11"
+}
