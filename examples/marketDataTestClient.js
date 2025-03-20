@@ -1,11 +1,11 @@
 //Accessing the XtsMarketDataAPI and XtsMarketDataWS from xts-marketdata-api library
 
-var XtsMarketDataAPI = require('xts-marketdata-api').XtsMarketDataAPI;
-var XtsMarketDataWS = require('xts-marketdata-api').WS;
+// var XtsMarketDataAPI = require('xts-marketdata-api').XtsMarketDataAPI;
+// var XtsMarketDataWS = require('xts-marketdata-api').WS;
 
 //If you want to run the example directly with the code Please uncomment line 7 and 8 and comment line 3 and 4
-// var XtsMarketDataAPI = require('../lib/MDRestAPI');
-// var XtsMarketDataWS = require('../lib/MDSocket');
+var XtsMarketDataAPI = require('../lib/MDRestAPI');
+var XtsMarketDataWS = require('../lib/MDSocket');
 
 var config = require('./config/config.json');
 
@@ -106,11 +106,7 @@ async function testAPI() {
       {
         exchangeSegment: xtsMarketDataAPI.exchangeSegments.NSECM,
         exchangeInstrumentID: 2885,
-      },
-      {
-        exchangeSegment: xtsMarketDataAPI.exchangeSegments.NSECM,
-        exchangeInstrumentID: 11536,
-      },
+      }
     ],
     xtsMessageCode: 1502,
     publishFormat: 'JSON',
@@ -130,7 +126,7 @@ async function testAPI() {
         exchangeInstrumentID: 11536,
       },
     ],
-    xtsMessageCode: 1512,
+    xtsMessageCode: 1502,
   };
 
   // subscribe instrument to get market data
@@ -164,16 +160,6 @@ async function testAPI() {
   // get OHLC data
   await getOHLC(getOHLCRequest);
 
-  let getSubscriptionListRequest = {
-    xtsMessageCode: 1502,
-  };
-
-  // to get subscription list of instruments
-  await getSubscriptionlist(getSubscriptionListRequest);
-
-  let getIndexListRequest = {
-    exchangeSegment: xtsMarketDataAPI.exchangeSegments.NSECM,
-  };
 
   // to get index list
   await getIndexList(getIndexListRequest);
@@ -188,13 +174,6 @@ var subscription = async function (subscriptionRequest) {
   return response;
 };
 
-var getSubscriptionlist = async function (getSubscriptionListRequest) {
-  let response = await xtsMarketDataAPI.getSubscriptionlist(
-    getSubscriptionListRequest
-  );
-  console.log(response);
-  return response;
-};
 
 var getIndexList = async function (getIndexListRequest) {
   let response = await xtsMarketDataAPI.getIndexList(getIndexListRequest);
